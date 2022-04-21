@@ -1,3 +1,3 @@
-# librarie and dependancies that are needed for the mods to run
+libraries and dependancies that are needed for the mods to run
 
-# pretty self explanatory
+pretty self explanatory
