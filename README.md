@@ -19,3 +19,4 @@ Change machine recipes to force more progression through `immersive engineering`
 Check `comforts` and `armour underwear` mods<br />
 Check config files<br />
 Change all `beyond earth` machines to be more inline with `mekanism` and `immersive engineering`<br />
+fluuid and chemcial tank recipes<br />
