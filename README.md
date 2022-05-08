@@ -1,7 +1,20 @@
-# GalacticraftModpack
-Files, ideas and suggestions for the minecraft server
+# Change Log and To do
 
+Done:
+Created progression based machine tiers
+Integrated recipes 
+Made some items harder to craft
+Forced certain crafting recipes through create's mechanical crafting
 
-Write your suggestings here for mods that you would like to see added (in```ModList```). They may not work but they might so might as well put them down.
-
-Once the modpack is created it will be uploaded here so it can be downloaded and played to become aquinted with it before we begin the server.
+To Do:
+Use create mechanical crafter to make recipes with more than 9 ingredients
+Change ender eye recpie 
+Shift machine tiers
+Change oxygen bubble distributer recipie
+Add info to the different ores to see in JEI
+Shift power numbers -> Increase usage, decrease production
+Make higher tier rockets harder to obtain
+Change nasa work bench recipe
+Change machine recipes to force more progression through immersive engineering 
+Check `comforts` and `armour underwear` mods
+Check config files
