@@ -20,3 +20,4 @@ Check `comforts` and `armour underwear` mods<br />
 Check config files<br />
 Change all `beyond earth` machines to be more inline with `mekanism` and `immersive engineering`<br />
 fluuid and chemcial tank recipes<br />
+change rotors per shaft in turbine
