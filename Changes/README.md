@@ -9,7 +9,7 @@ Enrichment Chamber
 - A machine to make the most out of your rescources
 
 Energised Smelter
-- Like a furnace, but electic
+- Like a furnace, but electric
 
 Precision Sawmill
 - Cuts up wood precisely 
