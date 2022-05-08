@@ -1,6 +1,6 @@
-#TIER 1 - STEEL#
+# TIER 1 - STEEL
 Overworld
-#Machines
+## Machines
 
 Metallurgic Infuser
 - Used create alloys and other compounds
@@ -17,7 +17,7 @@ Precision Sawmill
 Osmium Compresser
 - Creates powerful alloys by using osmium
 
-#Power Genertors
+## Power Genertors
 
 Fuel Wood Heater
 - Uses solid fuel to create power
@@ -26,34 +26,34 @@ Heat Genorator
 - Uses ambient heat and other scources to genorate power
 
 
-##TIER 2 - REFINED OBSIDIAN
+# TIER 2 - REFINED OBSIDIAN
 Overworld
-#Machines
-#Power Genertors
-#Tools
+## Machines
+## Power Genertors
+## Tools
 
 
-##TIER 3 - DESH
+# TIER 3 - DESH
 Moon
-#Machines
-#Power Genertors
-#Tools
+## Machines
+## Power Genertors
+## Tools
 
 
-##TIER 4 - Ostrum / Mercury Stone
+# TIER 4 - Ostrum / Mercury Stone
 Mars / Mercury
-#Machines
-#Power Genertors
-#Tools
+## Machines
+## Power Genertors
+## Tools
 
 
-##TIER 5 - Calorite
+# TIER 5 - Calorite
 Venus
-#Machines
-#Power Genertors
+## Machines
+## Power Genertors
 
 
-##TIER 6 - Glacio Stone
+# TIER 6 - Glacio Stone
 Glacio
-#Machines
-#Power Genertors
+## Machines
+## Power Genertors
