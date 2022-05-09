@@ -17,7 +17,7 @@ Precision Sawmill
 Osmium Compresser
 - Creates powerful alloys by using osmium
 
-## Power Genertors
+## Power Generators
 
 Fuel Wood Heater
 - Uses solid fuel to create power
@@ -29,31 +29,31 @@ Heat Genorator
 # TIER 2 - REFINED OBSIDIAN
 Overworld
 ## Machines
-## Power Genertors
+## Power Generators
 ## Tools
 
 
 # TIER 3 - DESH
 Moon
 ## Machines
-## Power Genertors
+## Power Generators
 ## Tools
 
 
 # TIER 4 - Ostrum / Mercury Stone
 Mars / Mercury
 ## Machines
-## Power Genertors
+## Power Generators
 ## Tools
 
 
 # TIER 5 - Calorite
 Venus
 ## Machines
-## Power Genertors
+## Power Generators
 
 
 # TIER 6 - Glacio Stone
 Glacio
 ## Machines
-## Power Genertors
+## Power Generators
