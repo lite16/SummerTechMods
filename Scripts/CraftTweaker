@@ -1,7 +1,7 @@
 import mods.create.MechanicalCrafterManager;
 
-//mekanism
-
+//tier itmes
+//tier 1
 
 //infuser
 craftingTable.remove(<item:mekanism:metallurgic_infuser>);
@@ -10,7 +10,64 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:metallurgic_infuser");
 craftingTable.addShaped("metallurgic_infuser", <item:mekanism:metallurgic_infuser>, [
     [<item:minecraft:iron_ingot>, <item:minecraft:furnace>, <item:minecraft:iron_ingot>], 
     [<item:minecraft:redstone>, <item:mekanism:ingot_osmium>, <item:minecraft:redstone>],
-	[<item:minecraft:iron_ingot>, <item:mekanism:steel_casing>, <item:minecraft:iron_ingot>]]);
+    [<item:minecraft:iron_ingot>, <item:mekanism:steel_casing>, <item:minecraft:iron_ingot>]]);
+
+//enrichment
+craftingTable.remove(<item:mekanism:enrichment_chamber>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:enrichment_chamber");
+
+craftingTable.addShaped("enrichment_chamber", <item:mekanism:enrichment_chamber>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+    
+//electricfurnace
+craftingTable.remove(<item:mekanism:energised_smelter>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:enrichment_chamber");
+
+craftingTable.addShaped("energised_smelter", <item:mekanism:energised_smelter>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+
+//osmiumcompresser
+craftingTable.remove(<item:mekanism:osmiun_compresser>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:osmiun_compresser");
+
+craftingTable.addShaped("osmiun_compresser", <item:mekanism:osmiun_compresser>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+    
+//sawmill
+craftingTable.remove(<item:mekanism:precision_sawmill>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:precision_sawmill");
+
+craftingTable.addShaped("precision_sawmill", <item:mekanism:precision_sawmill>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+    
+//fuelwoodheater
+craftingTable.remove(<item:mekanism:fuel_wood_heater>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:fuel_wood_heater");
+
+craftingTable.addShaped("fuel_wood_heater", <item:mekanism:fuel_wood_heater>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air
+    
+//heatgenerator
+craftingTable.remove(<item:mekanism:heat_genorator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:heat_genorator");
+
+craftingTable.addShaped("heat_genorator", <item:mekanism:heat_genorator>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+
+
+//mekanism
 
 //machines
 //ultimate
