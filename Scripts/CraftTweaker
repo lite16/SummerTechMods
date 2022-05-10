@@ -8,68 +8,518 @@ craftingTable.remove(<item:mekanism:metallurgic_infuser>);
 mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:metallurgic_infuser");
 
 craftingTable.addShaped("metallurgic_infuser", <item:mekanism:metallurgic_infuser>, [
-    [<item:minecraft:iron_ingot>, <item:minecraft:furnace>, <item:minecraft:iron_ingot>], 
-    [<item:minecraft:redstone>, <item:mekanism:ingot_osmium>, <item:minecraft:redstone>],
-    [<item:minecraft:iron_ingot>, <item:mekanism:steel_casing>, <item:minecraft:iron_ingot>]]);
+    [<item:minecraft:iron_ingot>, <tag:items:forge:ingots/osmium>, <item:minecraft:iron_ingot>], 
+    [<item:mekanism:basic_chemical_tank>, <item:mekanism:steel_casing>, <item:minecraft:furnace>],
+    [<item:minecraft:iron_ingot>, <tag:items:forge:ingots/osmium>, <item:minecraft:iron_ingot>]]);
 
 //enrichment
 craftingTable.remove(<item:mekanism:enrichment_chamber>);
 mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:enrichment_chamber");
 
 craftingTable.addShaped("enrichment_chamber", <item:mekanism:enrichment_chamber>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<item:minecraft:redstone>, <item:mekanism:steel_casing>, <item:minecraft:redstone>],
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_control_circuit>, <tag:items:forge:ingots/steel>]]);
     
 //electricfurnace
-craftingTable.remove(<item:mekanism:energised_smelter>);
-mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:enrichment_chamber");
+craftingTable.remove(<item:mekanism:energized_smelter>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:energized_smelter");
 
-craftingTable.addShaped("energised_smelter", <item:mekanism:energised_smelter>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+craftingTable.addShaped("energized_smelter", <item:mekanism:energized_smelter>, [
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<item:minecraft:blast_furnace>, <item:mekanism:steel_casing>, <item:minecraft:blast_furnace>],
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_control_circuit>, <tag:items:forge:ingots/steel>]]);
 
 //osmiumcompresser
-craftingTable.remove(<item:mekanism:osmiun_compresser>);
-mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:osmiun_compresser");
+craftingTable.remove(<item:mekanism:osmium_compressor>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:osmium_compressor");
 
-craftingTable.addShaped("osmiun_compresser", <item:mekanism:osmiun_compresser>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+craftingTable.addShaped("osmium_compressor", <item:mekanism:osmium_compressor>, [
+    [<tag:items:forge:ingots/steel>, <item:minecraft:piston>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:ingots/osmium>, <item:mekanism:steel_casing>, <tag:items:forge:ingots/osmium>],
+    [<tag:items:forge:ingots/steel>, <tag:items:forge:plates/steel>, <tag:items:forge:ingots/steel>]]);
     
 //sawmill
 craftingTable.remove(<item:mekanism:precision_sawmill>);
 mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:precision_sawmill");
 
 craftingTable.addShaped("precision_sawmill", <item:mekanism:precision_sawmill>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
-    
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:sawblades>, <item:mekanism:steel_casing>, <tag:items:forge:sawblades>],
+    [<tag:items:forge:ingots/steel>, <item:minecraft:piston>, <tag:items:forge:ingots/steel>]]);
+  
 //fuelwoodheater
-craftingTable.remove(<item:mekanism:fuel_wood_heater>);
-mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:fuel_wood_heater");
+craftingTable.remove(<item:mekanism:fuelwood_heater>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:fuelwood_heater");
 
-craftingTable.addShaped("fuel_wood_heater", <item:mekanism:fuel_wood_heater>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air
+craftingTable.addShaped("fuelwood_heater", <item:mekanism:fuelwood_heater>, [
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_thermodynamic_conductor>, <tag:items:forge:ingots/steel>], 
+    [<item:minecraft:furnace>, <item:mekanism:steel_casing>, <item:minecraft:furnace>],
+    [<tag:items:forge:ingots/steel>, <item:minecraft:coal_block>, <tag:items:forge:ingots/steel>]]);
     
 //heatgenerator
-craftingTable.remove(<item:mekanism:heat_genorator>);
-mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:heat_genorator");
+craftingTable.remove(<item:mekanismgenerators:heat_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:heat_generator");
 
-craftingTable.addShaped("heat_genorator", <item:mekanism:heat_genorator>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+craftingTable.addShaped("heat_generator", <item:mekanismgenerators:heat_generator>, [
+    [<tag:items:forge:ingots/steel>, <item:mekanism:basic_thermodynamic_conductor>, <tag:items:forge:ingots/steel>], 
+    [<item:minecraft:bucket>, <item:mekanism:steel_casing>, <item:minecraft:bucket>],
+    [<tag:items:forge:ingots/steel>, <item:minecraft:furnace>, <tag:items:forge:ingots/steel>]]);
+
+
+//tier 2 
+
+//combiner 
+craftingTable.remove(<item:mekanism:combiner>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:combiner");
+
+craftingTable.addShaped("combiner", <item:mekanism:combiner>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:immersiveengineering:component_steel>, <item:mekanism:steel_casing>, <item:immersiveengineering:component_steel>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:piston>, <tag:items:forge:ingots/refined_obsidian>]]);
+
+//crusher
+craftingTable.remove(<item:mekanism:crusher>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:crusher");
+
+craftingTable.addShaped("crusher", <item:mekanism:crusher>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:minecraft:piston>, <item:mekanism:steel_casing>, <item:minecraft:piston>],
+    [<tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:plates/steel>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//electrolyticseperator
+craftingTable.remove(<item:mekanism:electrolytic_separator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:electrolytic_separator");
+
+craftingTable.addShaped("electrolytic_separator", <item:mekanism:electrolytic_separator>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:advanced_chemical_tank>, <item:mekanism:steel_casing>, <item:mekanism:advanced_chemical_tank>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:electrolytic_core>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//oxidizer
+craftingTable.remove(<item:mekanism:chemical_oxidizer>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:chemical_oxidizer");
+
+craftingTable.addShaped("chemical_oxidizer", <item:mekanism:chemical_oxidizer>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:dynamic_tank>, <item:mekanism:steel_casing>, <item:mekanism:dynamic_tank>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_chemical_tank>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//prc
+craftingTable.remove(<item:mekanism:pressurized_reaction_chamber>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "pressurized_reaction_chamber");
+
+craftingTable.addShaped("pressurized_reaction_chamber", <item:mekanism:pressurized_reaction_chamber>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:advanced_pressurized_tube>, <item:mekanism:steel_casing>, <item:mekanism:advanced_pressurized_tube>],
+    [<item:mekanism:advanced_chemical_tank>, <item:mekanism:dynamic_tank>, <item:mekanism:advanced_chemical_tank>]]);
+	
+//liquifyer
+craftingTable.remove(<item:mekanism:nutritional_liquifier>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:nutritional_liquifier");
+
+craftingTable.addShaped("nutritional_liquifier", <item:mekanism:nutritional_liquifier>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:minecraft:bowl>, <item:mekanism:steel_casing>, <item:minecraft:bowl>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:piston>, <tag:items:forge:ingots/refined_obsidian>]]);
+
+//heater
+craftingTable.remove(<item:mekanism:resistive_heater>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:resistive_heater");
+
+craftingTable.addShaped("resistive_heater", <item:mekanism:resistive_heater>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:advanced_thermodynamic_conductor>, <item:mekanism:steel_casing>, <item:mekanism:advanced_thermodynamic_conductor>],
+    [<tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:ingots/tin>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//pigmentextract
+craftingTable.remove(<item:mekanism:pigment_extractor>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:pigment_extractor");
+
+craftingTable.addShaped("pigment_extractor", <item:mekanism:pigment_extractor>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:minecraft:flint>, <item:mekanism:steel_casing>, <item:minecraft:flint>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:piston>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//pigment_mixer
+craftingTable.remove(<item:mekanism:pigment_mixer>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:pigment_mixer");
+
+craftingTable.addShaped("pigment_mixer", <item:mekanism:pigment_mixer>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:hdpe_rod>, <item:mekanism:steel_casing>, <item:mekanism:hdpe_rod>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:piston>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//painting_machine
+craftingTable.remove(<item:mekanism:painting_machine>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:painting_machine");
+
+craftingTable.addShaped("painting_machine", <item:mekanism:painting_machine>, [
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>], 
+    [<item:mekanism:dye_base>, <item:mekanism:steel_casing>, <item:mekanism:dye_base>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mtr:brush>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//solar_generator
+craftingTable.remove(<item:mekanismgenerators:solar_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:solar_generator");
+
+craftingTable.addShaped("solar_generator", <item:mekanismgenerators:solar_generator>, [
+    [<item:mekanismgenerators:solar_panel>, <item:mekanismgenerators:solar_panel>, <item:mekanismgenerators:solar_panel>], 
+    [<item:mekanism:energy_tablet>, <item:mekanism:steel_casing>, <item:mekanism:energy_tablet>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:energy_tablet>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//wind_generator
+craftingTable.remove(<item:mekanismgenerators:wind_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:wind_generator");
+
+craftingTable.addShaped("wind_generator", <item:mekanismgenerators:wind_generator>, [
+    [<item:mekanismgenerators:turbine_blade>, <item:mekanismgenerators:turbine_blade>, <item:mekanismgenerators:turbine_blade>], 
+    [<item:minecraft:air>, <item:mekanism:steel_casing>, <item:minecraft:air>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:basic_induction_cell>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//electric_pump
+craftingTable.remove(<item:mekanism:electric_pump>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:electric_pump");
+
+craftingTable.addShaped("electric_pump", <item:mekanism:electric_pump>, [
+    [<item:minecraft:air>, <item:mekanism:advanced_mechanical_pipe>, <item:minecraft:air>], 
+    [<item:minecraft:bucket>, <item:mekanism:steel_casing>, <item:minecraft:bucket>],
+    [<tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:ingots/refined_obsidian>]]);
+	
+//flamethrower
+craftingTable.remove(<item:mekanism:flamethrower>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:flamethrower");
+
+craftingTable.addShaped("flamethrower", <item:mekanism:flamethrower>, [
+    [<tag:items:forge:ingots/tin>, <tag:items:forge:ingots/tin>, <tag:items:forge:ingots/tin>], 
+    [<tag:items:forge:ingots/tin>, <item:mekanism:advanced_chemical_tank>, <item:minecraft:flint_and_steel>],
+    [<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/refined_obsidian>]]);	
+
+//tier 3
+//fluid_plenisher
+craftingTable.remove(<item:mekanism:fluidic_plenisher>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:fluidic_plenisher");
+
+craftingTable.addShaped("fluidic_plenisher", <item:mekanism:fluidic_plenisher>, [
+    [<item:minecraft:air>, <item:mekanism:advanced_control_circuit>, <item:minecraft:air>], 
+    [<item:minecraft:bucket>, <item:mekanism:electric_pump>, <item:minecraft:bucket>],
+    [<tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>]]);
+	
+//bio_generator
+craftingTable.remove(<item:mekanismgenerators:bio_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:bio_generator");
+
+craftingTable.addShaped("bio_generator", <item:mekanismgenerators:bio_generator>, [
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:bio_fuel>, <item:mekanism:steel_casing>, <item:mekanism:bio_fuel>],
+    [<tag:items:forge:ingots/desh>, <item:mekanism:energy_tablet>, <tag:items:forge:ingots/desh>]]);
+	
+//advanced_solar_generator
+craftingTable.remove(<item:mekanismgenerators:advanced_solar_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:advanced_solar_generator");
+
+craftingTable.addShaped("advanced_solar_generator", <item:mekanismgenerators:advanced_solar_generator>, [
+    [<item:mekanismgenerators:solar_generator>, <item:mekanism:advanced_control_circuit>, <item:mekanismgenerators:solar_generator>], 
+    [<item:mekanismgenerators:solar_generator>, <item:mekanism:basic_induction_cell>, <item:mekanismgenerators:solar_generator>],
+    [<tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>]]);
+	
+//seismic_vibrator
+craftingTable.remove(<item:mekanism:seismic_vibrator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:seismic_vibrator");
+
+craftingTable.addShaped("seismic_vibrator", <item:mekanism:seismic_vibrator>, [
+    [<tag:items:forge:ingots/desh>, <tag:items:forge:cobblestone>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:advanced_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:advanced_control_circuit>],
+    [<tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>, <tag:items:forge:ingots/desh>]]);
+	
+//chemical_infuser
+craftingTable.remove(<item:mekanism:chemical_infuser>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:chemical_infuser");
+
+craftingTable.addShaped("chemical_infuser", <item:mekanism:chemical_infuser>, [
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:advanced_chemical_tank>, <item:mekanism:steel_casing>, <item:mekanism:advanced_chemical_tank>],
+    [<tag:items:forge:ingots/desh>, <item:mekanism:dynamic_tank>, <tag:items:forge:ingots/desh>]]);
+	
+//chemical_injection_chamber
+craftingTable.remove(<item:mekanism:chemical_injection_chamber>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:chemical_injection_chamber");
+
+craftingTable.addShaped("chemical_injection_chamber", <item:mekanism:chemical_injection_chamber>, [
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:gauge_dropper>, <item:mekanism:steel_casing>, <item:mekanism:gauge_dropper>],
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_chemical_tank>, <tag:items:forge:ingots/desh>]]);
+	
+//rotary_condensentrator
+craftingTable.remove(<item:mekanism:rotary_condensentrator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:rotary_condensentrator");
+
+craftingTable.addShaped("rotary_condensentrator", <item:mekanism:rotary_condensentrator>, [
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:advanced_chemical_tank>, <item:mekanism:steel_casing>, <item:mekanism:advanced_fluid_tank>],
+    [<tag:items:forge:ingots/desh>, <item:createaddition:electric_motor>, <tag:items:forge:ingots/desh>]]);
+	
+//purification_chamber
+craftingTable.remove(<item:mekanism:purification_chamber>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:purification_chamber");
+
+craftingTable.addShaped("purification_chamber", <item:mekanism:purification_chamber>, [
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_control_circuit>, <tag:items:forge:ingots/desh>], 
+    [<item:minecraft:piston>, <item:mekanism:steel_casing>, <item:minecraft:piston>],
+    [<tag:items:forge:ingots/desh>, <item:toughasnails:water_purifier>, <tag:items:forge:ingots/desh>]]);
+	
+
+//atomic dissasemlber
+craftingTable.remove(<item:mekanism:atomic_disassembler>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:atomic_disassembler");
+
+<recipetype:create:mechanical_crafting>.addRecipe("atomic_disassembler", <item:mekanism:atomic_disassembler>, [
+    [<item:mekanism:advanced_control_circuit>, <item:mekanism:energy_tablet>, <tag:items:forge:ingots/desh>], 
+    [<item:mekanism:advanced_control_circuit>, <item:mekanism:configurator>, <tag:items:forge:ingots/desh>],
+	[<item:minecraft:air>, <item:mekanism:hdpe_stick>, <item:minecraft:air>]]);
+	
+//jetpack
+craftingTable.remove(<item:mekanism:jetpack>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:jetpack");
+
+<recipetype:create:mechanical_crafting>.addRecipe("jetpack", <item:mekanism:jetpack>, [
+    [<item:beyond_earth:rocket_fin>, <item:mekanism:advanced_control_circuit>, <item:beyond_earth:rocket_fin>], 
+    [<tag:items:forge:ingots/desh>, <item:mekanism:advanced_chemical_tank>, <tag:items:forge:ingots/desh>],
+	[<item:minecraft:air>, <tag:items:forge:ingots/desh>, <item:minecraft:air>]]);
+	
+	
+//tier 4
+//chemical_crystallizer
+craftingTable.remove(<item:mekanism:chemical_crystallizer>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:chemical_crystallizer");
+
+craftingTable.addShaped("chemical_crystallizer", <item:mekanism:chemical_crystallizer>, [
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:fluorite_gem>, <item:beyond_earth:mercury_stone>], 
+    [<item:mekanism:elite_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:elite_control_circuit>],
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:fluorite_gem>, <item:beyond_earth:mercury_stone>]]);
+	
+//chemical_dissolution_chamber
+craftingTable.remove(<item:mekanism:chemical_dissolution_chamber>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:chemical_dissolution_chamber");
+
+craftingTable.addShaped("chemical_dissolution_chamber", <item:mekanism:chemical_dissolution_chamber>, [
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:elite_chemical_tank>, <item:beyond_earth:mercury_stone>], 
+    [<item:mekanism:elite_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:elite_control_circuit>],
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:elite_chemical_tank>, <item:beyond_earth:mercury_stone>]]);
+	
+//isotopic_centrifuge
+craftingTable.remove(<item:mekanism:isotopic_centrifuge>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:isotopic_centrifuge");
+
+craftingTable.addShaped("isotopic_centrifuge", <item:mekanism:isotopic_centrifuge>, [
+    [<item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>], 
+    [<item:createaddition:electric_motor>, <item:mekanism:elite_chemical_tank>, <item:createaddition:electric_motor>],
+    [<item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>]]);
+	
+//solar_neutron_activator
+craftingTable.remove(<item:mekanism:solar_neutron_activator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:solar_neutron_activator");
+
+craftingTable.addShaped("solar_neutron_activator", <item:mekanism:solar_neutron_activator>, [
+    [<item:mekanismgenerators:solar_panel>, <item:mekanismgenerators:solar_panel>, <item:mekanismgenerators:solar_panel>], 
+    [<item:mekanism:elite_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:elite_control_circuit>],
+    [<item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>, <item:beyond_earth:mercury_stone>]]);
+	
+//gas_burning_generator
+craftingTable.remove(<item:mekanismgenerators:gas_burning_generator>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:gas_burning_generator");
+
+craftingTable.addShaped("gas_burning_generator", <item:mekanismgenerators:gas_burning_generator>, [
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:elite_control_circuit>, <item:beyond_earth:mercury_stone>], 
+    [<item:minecraft:furnace>, <item:mekanism:steel_casing>, <item:minecraft:furnace>],
+    [<item:beyond_earth:mercury_stone>, <item:mekanism:elite_chemical_tank>, <item:beyond_earth:mercury_stone>]]);
+	
+
+//mekasuit_helmet
+craftingTable.remove(<item:mekanism:mekasuit_helmet>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:mekasuit_helmet");
+
+<recipetype:create:mechanical_crafting>.addRecipe("mekasuit_helmet", <item:mekanism:mekasuit_helmet>, [
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>],
+    [<tag:items:forge:ingots/steel>,  <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:ingots/ostrum>, <item:mekanism:hdpe_sheet>, <item:minecraft:netherite_helmet>, <item:mekanism:hdpe_sheet>, <tag:items:forge:ingots/ostrum>],
+	[<tag:items:forge:ingots/steel>,  <item:mekanism:pellet_polonium>, <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>, <tag:items:forge:ingots/steel>], 
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>]]);
+	
+//mekasuit_bodyarmor
+craftingTable.remove(<item:mekanism:mekasuit_bodyarmor>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:mekasuit_bodyarmor");
+
+<recipetype:create:mechanical_crafting>.addRecipe("mekasuit_bodyarmor", <item:mekanism:mekasuit_bodyarmor>, [
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>],
+    [<tag:items:forge:ingots/steel>,  <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:ingots/ostrum>, <item:mekanism:hdpe_sheet>, <item:minecraft:netherite_chestplate>, <item:mekanism:hdpe_sheet>, <tag:items:forge:ingots/ostrum>],
+	[<tag:items:forge:ingots/steel>,  <item:mekanism:pellet_polonium>, <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>, <tag:items:forge:ingots/steel>], 
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>]]);
+	
+//mekasuit_pants
+craftingTable.remove(<item:mekanism:mekasuit_pants>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:mekasuit_pants");
+
+<recipetype:create:mechanical_crafting>.addRecipe("mekasuit_pants", <item:mekanism:mekasuit_pants>, [
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>],
+    [<tag:items:forge:ingots/steel>,  <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:ingots/ostrum>, <item:mekanism:hdpe_sheet>, <item:minecraft:netherite_leggings>, <item:mekanism:hdpe_sheet>, <tag:items:forge:ingots/ostrum>],
+	[<tag:items:forge:ingots/steel>,  <item:mekanism:pellet_polonium>, <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>, <tag:items:forge:ingots/steel>], 
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>]]);	
+	
+//mekasuit_boots
+craftingTable.remove(<item:mekanism:mekasuit_boots>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:mekasuit_boots");
+
+<recipetype:create:mechanical_crafting>.addRecipe("mekasuit_boots", <item:mekanism:mekasuit_boots>, [
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>],
+    [<tag:items:forge:ingots/steel>,  <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <tag:items:forge:ingots/steel>], 
+    [<tag:items:forge:ingots/ostrum>, <item:mekanism:hdpe_sheet>, <item:minecraft:netherite_boots>, <item:mekanism:hdpe_sheet>, <tag:items:forge:ingots/ostrum>],
+	[<tag:items:forge:ingots/steel>,  <item:mekanism:pellet_polonium>, <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>, <tag:items:forge:ingots/steel>], 
+	[<tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/ostrum>]])
+	;
+	
+//meka_tool
+craftingTable.remove(<item:mekanism:meka_tool>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:meka_tool");
+
+<recipetype:create:mechanical_crafting>.addRecipe("meka_tool", <item:mekanism:meka_tool>, [
+	[<tag:items:forge:ingots/ostrum>, <item:minecraft:netherite_sword>, <tag:items:forge:ingots/ostrum>, <item:minecraft:netherite_pickaxe>, <tag:items:forge:ingots/ostrum>],
+    [<item:minecraft:air>,  <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:mekanism:elite_control_circuit>, <item:minecraft:air>], 
+    [<tag:items:forge:ingots/ostrum>, <item:mekanism:hdpe_sheet>, <item:mekanism:atomic_disassembler>, <item:mekanism:hdpe_sheet>, <tag:items:forge:ingots/ostrum>],
+	[<item:minecraft:air>,  <item:mekanism:pellet_polonium>, <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>, <item:minecraft:air>], 
+	[<tag:items:forge:ingots/ostrum>, <item:minecraft:netherite_axe>, <tag:items:forge:ingots/ostrum>, <item:minecraft:netherite_shovel>, <tag:items:forge:ingots/ostrum>]]);
+	
+//tier 5
+//control_rod_assembly
+craftingTable.remove(<item:mekanismgenerators:control_rod_assembly>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:control_rod_assembly");
+
+craftingTable.addShaped("control_rod_assembly", <item:mekanismgenerators:control_rod_assembly>, [
+    [<tag:items:forge:ingots/lead>, <item:mekanism:ultimate_control_circuit>, <tag:items:forge:ingots/lead>], 
+    [<tag:items:forge:ingots/calorite>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/calorite>],
+    [<tag:items:forge:ingots/calorite>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/calorite>]]);
+	
+//fission_fuel_assembly
+craftingTable.remove(<item:mekanismgenerators:fission_fuel_assembly>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:fission_fuel_assembly");
+
+craftingTable.addShaped("fission_fuel_assembly", <item:mekanismgenerators:fission_fuel_assembly>, [
+    [<tag:items:forge:ingots/lead>, <item:mekanism:ultimate_control_circuit>, <tag:items:forge:ingots/lead>], 
+    [<tag:items:forge:ingots/calorite>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/calorite>],
+    [<tag:items:forge:ingots/calorite>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/calorite>]]);
+	
+//qio_drive_array
+craftingTable.remove(<item:mekanism:qio_drive_array>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:qio_drive_array");
+
+craftingTable.addShaped("qio_drive_array", <item:mekanism:qio_drive_array>, [
+    [<tag:items:forge:ingots/calorite>, <item:mekanism:ultimate_control_circuit>, <tag:items:forge:ingots/calorite>], 
+    [<item:mekanism:teleportation_core>, <tag:items:forge:ingots/lead>, <item:mekanism:teleportation_core>],
+    [<tag:items:forge:ingots/calorite>, <item:mekanism:ultimate_control_circuit>, <tag:items:forge:ingots/calorite>]]);
+	
+//tier 6
+
+//fusion_reactor_frame
+craftingTable.remove(<item:mekanismgenerators:fusion_reactor_frame>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanismgenerators:fusion_reactor_frame");
+
+craftingTable.addShaped("fusion_reactor_frame", <item:mekanismgenerators:fusion_reactor_frame>, [
+    [<item:beyond_earth:glacio_stone>, <item:mekanism:pellet_polonium>, <item:beyond_earth:glacio_stone>], 
+    [<item:mekanism:pellet_polonium>, <item:mekanism:steel_casing>, <item:mekanism:pellet_polonium>],
+    [<item:beyond_earth:glacio_stone>, <item:mekanism:pellet_polonium>, <item:beyond_earth:glacio_stone>]]);
+	
+//sps_casing
+craftingTable.remove(<item:mekanism:sps_casing>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:sps_casing");
+
+craftingTable.addShaped("sps_casing", <item:mekanism:sps_casing>, [
+    [<item:beyond_earth:glacio_stone>, <item:mekanism:pellet_polonium>, <item:beyond_earth:glacio_stone>], 
+    [<item:mekanism:pellet_polonium>, <item:mekanism:pellet_plutonium>, <item:mekanism:pellet_polonium>],
+    [<item:beyond_earth:glacio_stone>, <item:mekanism:pellet_polonium>, <item:beyond_earth:glacio_stone>]]);
+
 
 
 //mekanism
 
-//machines
+//tanks
+//basic_fluid_tank
+craftingTable.remove(<item:mekanism:basic_fluid_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:basic_fluid_tank");
+
+craftingTable.addShaped("basic_fluid_tank", <item:mekanism:basic_fluid_tank>, [
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/steel>, <item:minecraft:redstone>], 
+    [<tag:items:forge:ingots/steel>, <item:minecraft:air>, <tag:items:forge:ingots/steel>],
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/steel>, <item:minecraft:redstone>]]);
+	
+//advanced_fluid_tank
+craftingTable.remove(<item:mekanism:advanced_fluid_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:advanced_fluid_tank");
+
+craftingTable.addShaped("advanced_fluid_tank", <item:mekanism:advanced_fluid_tank>, [
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/refined_obsidian>, <item:minecraft:redstone>], 
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:air>, <tag:items:forge:ingots/refined_obsidian>],
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/refined_obsidian>, <item:minecraft:redstone>]]);
+	
+//elite_fluid_tank
+craftingTable.remove(<item:mekanism:elite_fluid_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:elite_fluid_tank");
+
+craftingTable.addShaped("elite_fluid_tank", <item:mekanism:elite_fluid_tank>, [
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/desh>, <item:minecraft:redstone>], 
+    [<tag:items:forge:ingots/desh>, <item:minecraft:air>, <tag:items:forge:ingots/desh>],
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/desh>, <item:minecraft:redstone>]]);
+	
+//ultimate_fluid_tank
+craftingTable.remove(<item:mekanism:ultimate_fluid_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:ultimate_fluid_tank");
+
+craftingTable.addShaped("ultimate_fluid_tank", <item:mekanism:ultimate_fluid_tank>, [
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/ostrum>, <item:minecraft:redstone>], 
+    [<tag:items:forge:ingots/ostrum>, <item:minecraft:air>, <tag:items:forge:ingots/ostrum>],
+    [<item:minecraft:redstone>, <tag:items:forge:ingots/ostrum>, <item:minecraft:redstone>]]);
+	
+	
+//basic_chemical_tank
+craftingTable.remove(<item:mekanism:basic_chemical_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:basic_chemical_tank");
+
+craftingTable.addShaped("basic_chemical_tank", <item:mekanism:basic_chemical_tank>, [
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/steel>, <tag:items:forge:dusts/bronze>], 
+    [<tag:items:forge:ingots/steel>, <item:minecraft:air>, <tag:items:forge:ingots/steel>],
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/steel>, <tag:items:forge:dusts/bronze>]]);
+	
+//advanced_chemical_tank
+craftingTable.remove(<item:mekanism:advanced_chemical_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:advanced_chemical_tank");
+
+craftingTable.addShaped("advanced_chemical_tank", <item:mekanism:advanced_chemical_tank>, [
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:dusts/bronze>], 
+    [<tag:items:forge:ingots/refined_obsidian>, <item:minecraft:air>, <tag:items:forge:ingots/refined_obsidian>],
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/refined_obsidian>, <tag:items:forge:dusts/bronze>]]);
+	
+//elite_chemical_tank
+craftingTable.remove(<item:mekanism:elite_chemical_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:elite_chemical_tank");
+
+craftingTable.addShaped("elite_chemical_tank", <item:mekanism:elite_chemical_tank>, [
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/desh>, <tag:items:forge:dusts/bronze>], 
+    [<tag:items:forge:ingots/desh>, <item:minecraft:air>, <tag:items:forge:ingots/desh>],
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/desh>, <tag:items:forge:dusts/bronze>]]);
+	
+//ultimate_chemical_tank
+craftingTable.remove(<item:mekanism:ultimate_chemical_tank>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:ultimate_chemical_tank");
+
+craftingTable.addShaped("ultimate_chemical_tank", <item:mekanism:ultimate_chemical_tank>, [
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:dusts/bronze>], 
+    [<tag:items:forge:ingots/ostrum>, <item:minecraft:air>, <tag:items:forge:ingots/ostrum>],
+    [<tag:items:forge:dusts/bronze>, <tag:items:forge:ingots/ostrum>, <tag:items:forge:dusts/bronze>]]);
+	
+	
+
+//machins
 //ultimate
 craftingTable.remove(<item:mekanism:ultimate_smelting_factory>);
 mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:ultimate_smelting_factory");
@@ -242,7 +692,7 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:modification_station");
 craftingTable.addShaped("modification_station", <item:mekanism:modification_station>, [
     [<item:pneumaticcraft:module_expansion_card>, <tag:items:mekanism:personal_storage>, <item:pneumaticcraft:module_expansion_card>], 
     [<item:mekanism:ultimate_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:ultimate_control_circuit>],
-	[<item:mekanism:hdpe_sheet>, <item:mekanism:pellet_polonium>, <item:mekanism:hdpe_sheet>]]);
+	[<tag:items:forge:ingots/calorite>, <item:mekanism:pellet_polonium>, <tag:items:forge:ingots/calorite>]]);
 	
 //steel casing
 craftingTable.remove(<item:mekanism:steel_casing>);
@@ -260,7 +710,7 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "mekanism:digital_miner");
 <recipetype:create:mechanical_crafting>.addRecipe("digital_miner", <item:mekanism:digital_miner>, [
     [<item:mekanism:alloy_atomic>, <item:pneumaticcraft:assembly_controller>, <item:mekanism:alloy_atomic>], 
     [<item:pneumaticcraft:printed_circuit_board>, <item:mekanism:robit>, <item:pneumaticcraft:printed_circuit_board>],
-	[<item:moremekanismprocessing:crystal_ostrum>, <item:mekanism:steel_casing>, <item:moremekanismprocessing:crystal_ostrum>]]);
+	[<item:moremekanismprocessing:crystal_calorite>, <item:mekanism:steel_casing>, <item:moremekanismprocessing:crystal_calorite>]]);
 	
 //robit
 craftingTable.remove(<item:mekanism:robit>);
@@ -482,3 +932,28 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "beyond_earth:rover");
 craftingTable.remove(<item:beyond_earth:water_pump>);
 mods.jei.JEI.hideRecipe("minecraft:crafting", "beyond_earth:water_pump");
 
+//beyond_earth:oxygen_bubble_distributor
+craftingTable.remove(<item:beyond_earth:oxygen_bubble_distributor>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "beyond_earth:oxygen_bubble_distributor");
+
+craftingTable.addShaped("oxygen_bubble_distributor", <item:beyond_earth:oxygen_bubble_distributor>, [
+    [<item:mekanismgenerators:turbine_blade>, <item:minecraft:air>], 
+    [<item:beyond_earth:oxygen_loader>, <item:minecraft:air>]]);
+
+//nasa bench
+craftingTable.remove(<item:beyond_earth:nasa_workbench>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "beyond_earth:nasa_workbench");
+
+craftingTable.addShaped("nasa_workbench", <item:beyond_earth:nasa_workbench>, [
+    [<item:beyond_earth:compressed_steel>, <item:pneumaticcraft:pressure_tube>, <item:beyond_earth:compressed_steel>], 
+    [<item:mekanism:basic_control_circuit>, <item:mekanism:steel_casing>, <item:mekanism:basic_control_circuit>],
+	[<item:beyond_earth:compressed_steel>, <item:minecraft:redstone_torch>, <item:beyond_earth:compressed_steel>]]);
+	
+//ender eye
+craftingTable.remove(<item:minecraft:ender_eye>);
+mods.jei.JEI.hideRecipe("minecraft:crafting", "minecraft:ender_eye");
+
+craftingTable.addShaped("ender_eye", <item:minecraft:ender_eye>, [
+    [<item:beyond_earth:glacio_stone>, <item:beyond_earth:ice_shard>, <item:beyond_earth:glacio_stone>], 
+    [<item:beyond_earth:ice_shard>, <item:minecraft:ender_pearl>, <item:beyond_earth:ice_shard>],
+	[<item:beyond_earth:glacio_stone>, <item:beyond_earth:ice_shard>, <item:beyond_earth:glacio_stone>]]);
