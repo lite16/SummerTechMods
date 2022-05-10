@@ -17,10 +17,11 @@ Precision Sawmill
 Osmium Compresser
 - Creates powerful alloys by using osmium
 
-## Power Generators
 
 Fuel Wood Heater
-- Uses solid fuel to create power
+- Uses solid fuel to create heat
+
+## Power Generators
 
 Heat Genorator
 - Uses ambient heat and other scources to genorate power
