@@ -30,6 +30,27 @@ Heat Genorator
 # TIER 2 - REFINED OBSIDIAN
 Overworld
 ## Machines
+
+Combiner
+- Uses stone and materials to create ores
+
+Crusher
+- Turns solid matter into dusts
+
+Chemical Oxidizer
+- Makes gasses from solid materials
+
+Electrolytic Seperator
+- Seperates liquids using electrolysis
+
+Pressurized Reaction Chamber
+- Uses gasses and liquids to create substrates and left over products
+
+Nutritional Liquifyer
+- Grinds food into a paste 
+
+Resistive Heater
+- Uses power to create heat energy
 ## Power Generators
 ## Tools
 
